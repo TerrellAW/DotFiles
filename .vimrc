@@ -7,6 +7,7 @@ set hidden
 set conceallevel=2
 set foldlevelstart=99
 set clipboard=unnamedplus
+set background=dark
 
 " Tags for library navigation, load only language-specific tags
 augroup language_tags
@@ -83,15 +84,6 @@ let NERDTreeShowHidden = 1
 
 " Enable Vimspector
 let g:vimspector_enable_mappings = 'HUMAN'
-
-" Replicate helix editor's base16_transparent theme
-set termguicolors
-colorscheme default
-hi Normal guibg=NONE ctermbg=NONE
-hi NonText guibg=NONE ctermbg=NONE
-hi LineNr guibg=NONE ctermbg=NONE
-hi SignColumn guibg=NONE ctermbg=NONE
-hi EndOfBuffer guibg=NONE ctermbg=NONE
 
 " Asyncomplete settings
 
