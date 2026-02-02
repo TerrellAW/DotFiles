@@ -135,14 +135,6 @@ if [ ! -f "$SESSION_FLAG" ] && [[ $- == *i* ]]; then
 	touch "$SESSION_FLAG" # Create flag file
 fi
 
-# PATH
-
-# Added by LM Studio CLI tool (lms)
-export PATH="$PATH:/home/mr-bones/.lmstudio/bin"
-
-# OpenShot Video Editor
-export PATH="$PATH:/home/mr-bones/Programs/OpenShot Video Editor"
-
 # Set editor for sudoedit
 export VISUAL=vim
 export EDITOR=vim
@@ -155,13 +147,6 @@ vim() {
 		command vim
 	fi
 }
-
-# Android SDK
-export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-export ANDROID_HOME=$HOME/Android/Sdk
-export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
