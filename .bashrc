@@ -115,7 +115,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-eval "$(~/.local/bin/mise activate)"
 
 # Git Bash Parsing and Prompt
 function parse_git_dirty {
@@ -132,25 +131,17 @@ export PS1="\n\t \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 # Check if first graphical shell
 SESSION_FLAG="/tmp/first_shell_$USER"
 if [ ! -f "$SESSION_FLAG" ] && [[ $- == *i* ]]; then
-	neofetch && ls # Run Neofetch
+	fastfetch && ls # Run Neofetch
 	touch "$SESSION_FLAG" # Create flag file
 fi
 
 # PATH
-
-export PATH="~/Programs/IntelliJ IDEA/bin:$PATH"
-. "$HOME/.cargo/env"
 
 # Added by LM Studio CLI tool (lms)
 export PATH="$PATH:/home/mr-bones/.lmstudio/bin"
 
 # OpenShot Video Editor
 export PATH="$PATH:/home/mr-bones/Programs/OpenShot Video Editor"
-
-# PyEnv
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init - bash)"
 
 # Set editor for sudoedit
 export VISUAL=vim
