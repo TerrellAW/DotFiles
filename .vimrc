@@ -62,6 +62,9 @@ Plug 'preservim/vim-markdown'
 " GruvBox Theme
 Plug 'morhetz/gruvbox'
 
+" Wayland clipboard support\
+Plug 'jasonccox/vim-wayland-clipboard'
+
 call plug#end()
 
 " LSP Performance Boost
