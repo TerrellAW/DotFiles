@@ -131,17 +131,14 @@ export PS1="\n\t \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 # Check if first graphical shell
 SESSION_FLAG="/tmp/first_shell_$USER"
 if [ ! -f "$SESSION_FLAG" ] && [[ $- == *i* ]]; then
-	fastfetch && ls # Run Neofetch
+	fastfetch && ls # Run fastfetch
 	touch "$SESSION_FLAG" # Create flag file
 fi
 
 # PATH
 
-# Added by LM Studio CLI tool (lms)
-export PATH="$PATH:/home/mr-bones/.lmstudio/bin"
-
-# OpenShot Video Editor
-export PATH="$PATH:/home/mr-bones/Programs/OpenShot Video Editor"
+# User scripts and binaries
+export PATH=$PATH:$HOME/.local/bin
 
 # Set editor for sudoedit
 export VISUAL=vim
