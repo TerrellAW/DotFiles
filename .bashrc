@@ -148,6 +148,11 @@ vim() {
 	fi
 }
 
+# Android SDK
+export PATH=$PATH:$ANDROID_HOME/dev/cmdline-tools/latest/bin
+export PATH=$PATH:$ANDROID_HOME/dev/platform-tools
+export ANDROID_HOME=$HOME/dev/android/sdk
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
