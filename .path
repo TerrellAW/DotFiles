@@ -5,3 +5,6 @@ export ANDROID_HOME=$HOME/dev/android/sdk
 
 # llama.cpp
 export PATH=$PATH:$HOME/programs/llama-b8323
+
+# Bash scripts
+export PATH=$PATH:$HOME/dev/bash/bash-scripts
