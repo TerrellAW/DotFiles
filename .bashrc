@@ -105,6 +105,11 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+# Path definitions.
+if [ -f ~/.path ]; then
+	. ~/.path
+fi
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -147,11 +152,6 @@ vim() {
 		command vim
 	fi
 }
-
-# Android SDK
-export PATH=$PATH:$ANDROID_HOME/dev/cmdline-tools/latest/bin
-export PATH=$PATH:$ANDROID_HOME/dev/platform-tools
-export ANDROID_HOME=$HOME/dev/android/sdk
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"

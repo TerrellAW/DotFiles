@@ -1,0 +1,7 @@
+# Android SDK
+export PATH=$PATH:$ANDROID_HOME/dev/cmdline-tools/latest/bin
+export PATH=$PATH:$ANDROID_HOME/dev/platform-tools
+export ANDROID_HOME=$HOME/dev/android/sdk
+
+# llama.cpp
+export PATH=$PATH:$HOME/programs/llama-b8323
