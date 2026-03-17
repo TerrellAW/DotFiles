@@ -64,7 +64,7 @@ Plug 'preservim/vim-markdown'
 Plug 'morhetz/gruvbox'
 
 " Wayland clipboard support\
-Plug 'jasonccox/vim-wayland-clipboard'
+" Plug 'jasonccox/vim-wayland-clipboard'
 
 call plug#end()
 
@@ -244,11 +244,6 @@ nnoremap <Leader>q :bp\|bd #<CR>
 " Add new lines in Normal mode
 nnoremap <Leader>O O<Esc>
 nnoremap <Leader>o o<Esc>
-
-" Copy with Wayland
-xnoremap <silent> y :w !wl-copy<CR><CR>
-" Paste from Wayland
-noremap <silent> p :r !wl-paste<CR><CR>
 
 " Start GruvBox theme (comment out for base16 transparent)
 autocmd VimEnter * ++nested colorscheme gruvbox

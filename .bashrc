@@ -145,7 +145,7 @@ export VISUAL=vim
 export EDITOR=vim
 
 # Fix vim-lsp not starting
-vim() {
+function vim() {
 	if [ -n "$1" ]; then
 		command vim -c "edit $1"
 	else
