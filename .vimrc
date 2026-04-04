@@ -10,7 +10,7 @@ set background=dark
 set clipboard=unnamedplus
 
 " Sourcing
-so align.vim
+so ~/.align.vim
 
 " Tags for library navigation, load only language-specific tags
 augroup language_tags
