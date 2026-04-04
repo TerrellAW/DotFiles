@@ -63,9 +63,9 @@ Plug 'puremourning/vimspector'
 Plug 'preservim/vim-markdown'
 
 " GruvBox Theme
-Plug 'morhetz/gruvbox'
+" Plug 'morhetz/gruvbox'
 
-" Wayland clipboard support\
+" Wayland clipboard support
 " Plug 'jasonccox/vim-wayland-clipboard'
 
 call plug#end()
@@ -248,7 +248,7 @@ nnoremap <Leader>O O<Esc>
 nnoremap <Leader>o o<Esc>
 
 " Start GruvBox theme (comment out for base16 transparent)
-autocmd VimEnter * ++nested colorscheme gruvbox
+" autocmd VimEnter * ++nested colorscheme gruvbox
 
 " Auto-open NERDTree and Tagbar
 autocmd VimEnter * NERDTree | wincmd l
