@@ -7,8 +7,10 @@ set hidden
 set conceallevel=2
 set foldlevelstart=99
 set background=dark
-
 set clipboard=unnamedplus
+
+" Sourcing
+so align.vim
 
 " Tags for library navigation, load only language-specific tags
 augroup language_tags
