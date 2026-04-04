@@ -9,6 +9,9 @@ set foldlevelstart=99
 set clipboard=unnamedplus
 set background=dark
 
+" Sourcing
+so ~/.align.vim
+
 " Tags for library navigation, load only language-specific tags
 augroup language_tags
 	au!
