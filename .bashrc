@@ -105,6 +105,11 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+# Path definitions
+if [ -f ~/.path ]; then
+	. ~/.path
+fi
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -134,15 +139,6 @@ if [ ! -f "$SESSION_FLAG" ] && [[ $- == *i* ]]; then
 	fastfetch && ls # Run fastfetch
 	touch "$SESSION_FLAG" # Create flag file
 fi
-
-# PATH
-
-# User scripts and binaries
-export PATH=$PATH:$HOME/.local/bin
-
-# Set editor for sudoedit
-export VISUAL=vim
-export EDITOR=vim
 
 # Fix vim-lsp not starting
 function vim() {

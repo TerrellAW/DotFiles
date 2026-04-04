@@ -1,0 +1,6 @@
+# User scripts and binaries
+export PATH=$PATH:$HOME/.local/bin
+
+# Set editor for sudoedit
+export VISUAL=vim
+export EDITOR=vim
