@@ -1,3 +1,6 @@
+" Source - https://vim.fandom.com/wiki/Regex-based_text_alignment
+" Author - Nall-ohki, version 7.0
+" Retrieved 2026-04-04, License - CC BY-SA
 command! -nargs=? -range Align <line1>,<line2>call AlignSection('<args>')
 vnoremap <silent> <Leader>a :Align<CR>
 function! AlignSection(regex) range
