@@ -68,6 +68,9 @@ Plug 'preservim/vim-markdown'
 " Wayland clipboard support
 " Plug 'jasonccox/vim-wayland-clipboard'
 
+" Lox Plugin
+Plug 'timmyjose-projects/lox.vim'
+
 call plug#end()
 
 " LSP Performance Boost

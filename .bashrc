@@ -140,6 +140,10 @@ if [ ! -f "$SESSION_FLAG" ] && [[ $- == *i* ]]; then
 	touch "$SESSION_FLAG" # Create flag file
 fi
 
+# Set editor for sudoedit
+export VISUAL=vim
+export EDITOR=vim
+
 # Fix vim-lsp not starting
 function vim() {
 	if [ -n "$1" ]; then

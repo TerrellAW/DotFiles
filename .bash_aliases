@@ -1,3 +1,5 @@
 alias svim='sudoedit'
 alias vim='gvim -v'
 alias doom='chocolate-doom -iwad /usr/games/doom/DOOM.WAD'
+alias godot='/home/mr-bones/.gdvm/bin/godot-wrapper-linux %f'
+alias gdvm='/home/mr-bones/.gdvm/bin/gdvm'
