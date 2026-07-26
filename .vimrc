@@ -12,6 +12,11 @@ set clipboard=unnamedplus
 " Sourcing
 so ~/.align.vim
 
+set clipboard=unnamedplus
+
+" Sourcing
+so ~/.align.vim
+
 " Tags for library navigation, load only language-specific tags
 augroup language_tags
 	au!
@@ -249,6 +254,11 @@ nnoremap <Leader>q :bp\|bd #<CR>
 " Add new lines in Normal mode
 nnoremap <Leader>O O<Esc>
 nnoremap <Leader>o o<Esc>
+
+" Copy with Wayland
+xnoremap <silent> y :w !wl-copy<CR><CR>
+" Paste from Wayland
+noremap <silent> p :r !wl-paste<CR><CR>
 
 " Start GruvBox theme (comment out for base16 transparent)
 " autocmd VimEnter * ++nested colorscheme gruvbox
