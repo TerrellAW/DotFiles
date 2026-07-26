@@ -1,10 +1,6 @@
-# Android SDK
-export PATH=$PATH:$ANDROID_HOME/dev/cmdline-tools/latest/bin
-export PATH=$PATH:$ANDROID_HOME/dev/platform-tools
-export ANDROID_HOME=$HOME/dev/android/sdk
+# User scripts and binaries
+export PATH=$PATH:$HOME/.local/bin
 
-# llama.cpp
-export PATH=$PATH:$HOME/programs/llama-b8323
-
-# Bash scripts
-export PATH=$PATH:$HOME/dev/bash/bash-scripts
+# Set editor for sudoedit
+export VISUAL=vim
+export EDITOR=vim

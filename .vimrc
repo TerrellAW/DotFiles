@@ -7,6 +7,10 @@ set hidden
 set conceallevel=2
 set foldlevelstart=99
 set background=dark
+set clipboard=unnamedplus
+
+" Sourcing
+so ~/.align.vim
 
 set clipboard=unnamedplus
 
@@ -64,7 +68,13 @@ Plug 'puremourning/vimspector'
 Plug 'preservim/vim-markdown'
 
 " GruvBox Theme
-Plug 'morhetz/gruvbox'
+" Plug 'morhetz/gruvbox'
+
+" Wayland clipboard support
+" Plug 'jasonccox/vim-wayland-clipboard'
+
+" Lox Plugin
+Plug 'timmyjose-projects/lox.vim'
 
 call plug#end()
 
@@ -251,7 +261,7 @@ xnoremap <silent> y :w !wl-copy<CR><CR>
 noremap <silent> p :r !wl-paste<CR><CR>
 
 " Start GruvBox theme (comment out for base16 transparent)
-autocmd VimEnter * ++nested colorscheme gruvbox
+" autocmd VimEnter * ++nested colorscheme gruvbox
 
 " Auto-open NERDTree and Tagbar
 autocmd VimEnter * NERDTree | wincmd l
