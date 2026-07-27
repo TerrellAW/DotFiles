@@ -244,11 +244,6 @@ nnoremap <Leader>q :bp\|bd #<CR>
 nnoremap <Leader>O O<Esc>
 nnoremap <Leader>o o<Esc>
 
-" Copy with Wayland
-xnoremap <silent> y :w !wl-copy<CR><CR>
-" Paste from Wayland
-noremap <silent> p :r !wl-paste<CR><CR>
-
 " Start GruvBox theme (comment out for base16 transparent)
 " autocmd VimEnter * ++nested colorscheme gruvbox
 
