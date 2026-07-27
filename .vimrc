@@ -12,11 +12,6 @@ set clipboard=unnamedplus
 " Sourcing
 so ~/.align.vim
 
-set clipboard=unnamedplus
-
-" Sourcing
-so ~/.align.vim
-
 " Tags for library navigation, load only language-specific tags
 augroup language_tags
 	au!
@@ -66,12 +61,6 @@ Plug 'puremourning/vimspector'
 
 " Vim Markdown
 Plug 'preservim/vim-markdown'
-
-" GruvBox Theme
-" Plug 'morhetz/gruvbox'
-
-" Wayland clipboard support
-" Plug 'jasonccox/vim-wayland-clipboard'
 
 " Lox Plugin
 Plug 'timmyjose-projects/lox.vim'
