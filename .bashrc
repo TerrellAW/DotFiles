@@ -136,7 +136,7 @@ export PS1="\n\t \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\]\n$ "
 # Check if first graphical shell
 SESSION_FLAG="/tmp/first_shell_$USER"
 if [ ! -f "$SESSION_FLAG" ] && [[ $- == *i* ]]; then
-	fastfetch && ls # Run fastfetch
+	fastfetch && cpufetch && ls # Run fastfetch and cpufetch
 	touch "$SESSION_FLAG" # Create flag file
 fi
 
